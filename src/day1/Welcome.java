@@ -22,6 +22,17 @@ public class Welcome {
         c1.isNotebook = true;
         c1.changeOperationSystem("Windows 10");
 
+        c2.brand = "Dell";
+        c2.year = 2018;
+        c2.price = 2000;
+        c2.operationSystem = "Windows 10";
+        c2.isNotebook = false;
+
+        c1.printComputer();
+
+
+
+
     }
 }
 

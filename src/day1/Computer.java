@@ -43,4 +43,8 @@ public class Computer {
         result += "Operation system: " + this.operationSystem + "\n";
         return result;
     }
+
+    public void printComputer() {
+        System.out.println(this.toString());
+    }
 }
