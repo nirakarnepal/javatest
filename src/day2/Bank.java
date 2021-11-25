@@ -21,6 +21,9 @@ public class Bank {
         a2.setId(2);
         a2.setPhone("987654321");
 
+        a1.transferBalance(a1, a2, 110);
+        a2.printAccount();
+
 
 
     }

@@ -64,6 +64,15 @@ public class Account {
         }
     }
 
+    public void transferBalance(Account account1, Account account2, double amount) {
+        if (amount > account1.balance) {
+            System.out.println("Insufficient funds");
+        } else {
+            account1.balance -= amount;
+            account2.balance += amount;
+        }
+    }
+
     public void printAccount() {
         System.out.println("Account ID: " + this.id);
         System.out.println("Account Balance: " + this.balance);
