@@ -74,10 +74,12 @@ public class Account {
     }
 
     public void printAccount() {
+        System.out.println("------------------------------------------------------");
         System.out.println("Account ID: " + this.id);
-        System.out.println("Account Balance: " + this.balance);
         System.out.println("Account Holder Name: " + this.name);
+        System.out.println("Account Balance: " + this.balance);
         System.out.println("Account Holder Email: " + this.email);
         System.out.println("Account Holder Phone: " + this.phone);
+        System.out.println("------------------------------------------------------");
     }
 }

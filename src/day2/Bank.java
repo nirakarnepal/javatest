@@ -23,6 +23,7 @@ public class Bank {
 
         a1.transferBalance(a1, a2, 110);
         a2.printAccount();
+        a1.printAccount();
 
 
 
