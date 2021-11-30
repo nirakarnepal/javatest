@@ -7,6 +7,7 @@ public class Employee {
     private double salary;
     private int age;
     private LocalDate hireDate;
+    private String race; //opt
 
     //Default constructor
     public Employee(){
@@ -19,6 +20,15 @@ public class Employee {
         this.salary = salary;
         this.age = age;
         this.hireDate = hireDate;
+    }
+
+    //Overloading
+    public Employee(String name, double salary, int age, LocalDate hireDate, String race){
+        this.name = name;
+        this.salary = salary;
+        this.age = age;
+        this.hireDate = hireDate;
+        this.race = race;
     }
 
     public String getName(){
@@ -53,9 +63,14 @@ public class Employee {
         this.hireDate = hireDate;
     }
 
+    //raise salary
+    public void raiseSalary(double byPercent){
+        double raise = salary * byPercent / 100;
+        salary += raise;
+    }
 
     public void printEmployee(){
-        System.out.println("Name: " + name);
+        System.out.println("Name: " + this.name);
         System.out.println("Salary: " + salary);
         System.out.println("Age: " + age);
         System.out.println("Hire date: " + hireDate);
