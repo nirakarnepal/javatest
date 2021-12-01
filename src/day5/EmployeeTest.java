@@ -13,7 +13,7 @@ public class EmployeeTest {
         employee0.setHireDate(LocalDate.of(2019, 1, 1));
 
         Employee employee1 = new Employee("John", 100000, 22, LocalDate.now());
-        Employee employee2 = new Employee("Doe", 999990, 28, LocalDate.now());
+        Employee employee2 = new Employee(null, 999990, 28, LocalDate.now());
 
         employee0.printEmployee();
         employee1.printEmployee();
