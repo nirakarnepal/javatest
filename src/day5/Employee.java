@@ -9,6 +9,7 @@ public class Employee {
     private int age;
     private LocalDate hireDate;
     private String race; //opt
+    private String socialSecurityNumber;
 
     //Default constructor
     public Employee() {
@@ -16,20 +17,22 @@ public class Employee {
     }
 
     //Parameterized constructor
-    public Employee(String name, double salary, int age, LocalDate hireDate) {
+    public Employee(String name, double salary, int age, String socialSecurityNumber, LocalDate hireDate) {
         //Objects helper class
         this.name = Objects.requireNonNullElse(name, "Unknown");
         this.salary = salary;
         this.age = age;
         this.hireDate = Objects.requireNonNullElse(hireDate, LocalDate.now());
+        this.socialSecurityNumber = Objects.requireNonNullElse(socialSecurityNumber, "Unknown");
     }
 
     //Overloading
-    public Employee(String name, double salary, int age, LocalDate hireDate, String race) {
+    public Employee(String name, double salary, int age, LocalDate hireDate, String socialSecurityNumber, String race) {
         this.name = name;
         this.salary = salary;
         this.age = age;
         this.hireDate = hireDate;
+        this.socialSecurityNumber=socialSecurityNumber;
         this.race = race;
     }
 
@@ -61,9 +64,6 @@ public class Employee {
         this.age = age;
     }
 
-    public void setHireDate(LocalDate hireDate) {
-        this.hireDate = hireDate;
-    }
 
     //raise salary
     public void raiseSalary(double byPercent) {

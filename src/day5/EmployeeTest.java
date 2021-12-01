@@ -12,8 +12,8 @@ public class EmployeeTest {
         employee0.setAge(30);
         employee0.setHireDate(LocalDate.of(2019, 1, 1));
 
-        Employee employee1 = new Employee("John", 100000, 22, LocalDate.now());
-        Employee employee2 = new Employee(null, 999990, 28, LocalDate.now());
+        Employee employee1 = new Employee("John", 100000, 22, "123556788", LocalDate.now());
+        Employee employee2 = new Employee(null, 999990, 28, "123456768",  LocalDate.now());
 
         employee0.printEmployee();
         employee1.printEmployee();
