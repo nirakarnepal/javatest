@@ -67,15 +67,15 @@ public class Employee {
 
     //raise salary
     public void raiseSalary(double byPercent) {
-        double raise = salary * byPercent / 100;
-        salary += raise;
+        double raise = this.salary * byPercent / 100;
+        this.salary += raise;
     }
 
     public void printEmployee() {
         System.out.println("Name: " + this.name);
-        System.out.println("Salary: " + salary);
-        System.out.println("Age: " + age);
-        System.out.println("Hire date: " + hireDate);
+        System.out.println("Salary: " + this.salary);
+        System.out.println("Age: " + this.age);
+        System.out.println("Hire date: " + this.hireDate);
         System.out.println("------------------------------");
     }
 
