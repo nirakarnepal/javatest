@@ -8,9 +8,9 @@ public class EmployeeTest {
         Employee employee0 = new Employee();
         //Using setters
         employee0.setName("John11");
-        employee0.setSalary(100011);
+        //employee0.setSalary(100011);
         employee0.setAge(30);
-        employee0.setHireDate(LocalDate.of(2019, 1, 1));
+        //employee0.setHireDate(LocalDate.of(2019, 1, 1));
 
         Employee employee1 = new Employee("John", 100000, 22, "123556788", LocalDate.now());
         Employee employee2 = new Employee(null, 999990, 28, "123456768",  LocalDate.now());

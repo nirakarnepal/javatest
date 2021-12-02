@@ -7,6 +7,13 @@ public class Account {
     private String email;
     private String phone;
 
+    public Account(int id, double balance, String name, String email, String phone) {
+        this.id = id;
+        this.balance = balance;
+        this.name = name;
+        this.email = email;
+        this.phone = phone;
+    }
 
     public String getName() {
         return name;
@@ -28,13 +35,13 @@ public class Account {
         return balance;
     }
 
-    public void setId(int id) {
-        this.id = id;
-    }
+//    public void setId(int id) {
+//        this.id = id;
+//    }
 
-    public void setName(String name) {
-        this.name = name;
-    }
+//    public void setName(String name) {
+//        this.name = name;
+//    }
 
     public void setEmail(String email) {
         this.email = email;
@@ -64,12 +71,12 @@ public class Account {
         }
     }
 
-    public void transferBalance(Account account1, Account account2, double amount) {
-        if (amount > account1.balance) {
+    public void transferBalance(Account account, double amount) {
+        if (amount > this.balance) {
             System.out.println("Insufficient funds");
         } else {
-            account1.balance -= amount;
-            account2.balance += amount;
+            this.balance -= amount;
+            account.balance += amount;
         }
     }
 

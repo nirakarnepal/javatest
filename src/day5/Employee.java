@@ -56,9 +56,6 @@ public class Employee {
         this.name = name;
     }
 
-    public void setSalary(double salary) {
-        this.salary = salary;
-    }
 
     public void setAge(int age) {
         this.age = age;
