@@ -10,6 +10,7 @@ public class Employee {
     private LocalDate hireDate;
     private String race; //opt
     private String socialSecurityNumber;
+    public static int count = 0;
 
     //Default constructor
     public Employee() {
@@ -19,6 +20,7 @@ public class Employee {
     //Parameterized constructor
     public Employee(String name, double salary, int age, String socialSecurityNumber, LocalDate hireDate) {
         //Objects helper class
+        this.count++;
         this.name = Objects.requireNonNullElse(name, "Unknown");
         this.salary = salary;
         this.age = age;
@@ -28,6 +30,7 @@ public class Employee {
 
     //Overloading
     public Employee(String name, double salary, int age, LocalDate hireDate, String socialSecurityNumber, String race) {
+        this.count++;
         this.name = name;
         this.salary = salary;
         this.age = age;
